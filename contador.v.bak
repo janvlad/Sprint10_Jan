@@ -1,0 +1,7 @@
+module contador(CLK, reset);
+
+input clk, reset;
+
+always @(posedge CLK)
+	begin
+		

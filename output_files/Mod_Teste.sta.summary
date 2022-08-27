@@ -1,0 +1,101 @@
+------------------------------------------------------------
+TimeQuest Timing Analyzer Summary
+------------------------------------------------------------
+
+Type  : Slow Model Setup 'ControlUnit:CUv03|ULAControl[1]'
+Slack : -12.670
+TNS   : -99.804
+
+Type  : Slow Model Setup 'freq_divider:comb_77|clk_out'
+Slack : -9.688
+TNS   : -668.634
+
+Type  : Slow Model Setup 'CLOCK_50'
+Slack : -7.456
+TNS   : -301.673
+
+Type  : Slow Model Setup 'SW[15]'
+Slack : -5.664
+TNS   : -62.617
+
+Type  : Slow Model Hold 'SW[15]'
+Slack : -3.903
+TNS   : -43.268
+
+Type  : Slow Model Hold 'ControlUnit:CUv03|ULAControl[1]'
+Slack : -1.964
+TNS   : -13.238
+
+Type  : Slow Model Hold 'CLOCK_50'
+Slack : 0.391
+TNS   : 0.000
+
+Type  : Slow Model Hold 'freq_divider:comb_77|clk_out'
+Slack : 0.391
+TNS   : 0.000
+
+Type  : Slow Model Minimum Pulse Width 'SW[15]'
+Slack : -3.152
+TNS   : -325.838
+
+Type  : Slow Model Minimum Pulse Width 'CLOCK_50'
+Slack : -2.000
+TNS   : -220.916
+
+Type  : Slow Model Minimum Pulse Width 'freq_divider:comb_77|clk_out'
+Slack : -0.500
+TNS   : -73.000
+
+Type  : Slow Model Minimum Pulse Width 'ControlUnit:CUv03|ULAControl[1]'
+Slack : 0.500
+TNS   : 0.000
+
+Type  : Fast Model Setup 'ControlUnit:CUv03|ULAControl[1]'
+Slack : -5.477
+TNS   : -43.117
+
+Type  : Fast Model Setup 'freq_divider:comb_77|clk_out'
+Slack : -4.117
+TNS   : -281.822
+
+Type  : Fast Model Setup 'CLOCK_50'
+Slack : -3.364
+TNS   : -94.564
+
+Type  : Fast Model Setup 'SW[15]'
+Slack : -2.765
+TNS   : -28.486
+
+Type  : Fast Model Hold 'SW[15]'
+Slack : -2.069
+TNS   : -22.188
+
+Type  : Fast Model Hold 'ControlUnit:CUv03|ULAControl[1]'
+Slack : -1.192
+TNS   : -8.546
+
+Type  : Fast Model Hold 'CLOCK_50'
+Slack : -0.134
+TNS   : -0.613
+
+Type  : Fast Model Hold 'freq_divider:comb_77|clk_out'
+Slack : 0.141
+TNS   : 0.000
+
+Type  : Fast Model Minimum Pulse Width 'CLOCK_50'
+Slack : -2.000
+TNS   : -220.916
+
+Type  : Fast Model Minimum Pulse Width 'SW[15]'
+Slack : -1.222
+TNS   : -104.584
+
+Type  : Fast Model Minimum Pulse Width 'freq_divider:comb_77|clk_out'
+Slack : -0.500
+TNS   : -73.000
+
+Type  : Fast Model Minimum Pulse Width 'ControlUnit:CUv03|ULAControl[1]'
+Slack : 0.500
+TNS   : 0.000
+
+------------------------------------------------------------

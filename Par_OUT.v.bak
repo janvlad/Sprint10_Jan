@@ -1,0 +1,12 @@
+module Par_OUT(input [7:0]RegData, Address, input clk, we, output reg [7:0]DataOut, output wren);
+
+	wire fioA, fioB;
+	
+	fioA = Address == 8'hFF ? 1 : 0;
+	fioB = we & fioA;
+	wren = we & (~fioA);
+	
+	always @ (posedge clk)
+		DataOut = fioB ? RegData : DataOut;
+	
+endmodule 

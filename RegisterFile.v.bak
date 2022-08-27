@@ -1,0 +1,27 @@
+module RegisterFile (
+  input [7:0]wd3,
+  input [2:0]wa3, ra1, ra2,
+  input we3,
+  input clk,
+  
+  output [7:0]rd1, rd2
+);
+  
+  wire [7:0]decOut;
+  wire [63:0]regOut;
+  
+  decoder decod (.Nbit(wa3), .Ndecimal(decOut));
+  
+  registrador reg1 (.dataIn(wd3), .clk(clk), .load(decOut[0] & we3), .dataOut(regOut[7:0]));
+  registrador reg2 (.dataIn(wd3), .clk(clk), .load(decOut[0] & we3), .dataOut(regOut[15:8]));
+  registrador reg3 (.dataIn(wd3), .clk(clk), .load(decOut[0] & we3), .dataOut(regOut[23:16]));
+  registrador reg4 (.dataIn(wd3), .clk(clk), .load(decOut[0] & we3), .dataOut(regOut[31:24]));
+  registrador reg5 (.dataIn(wd3), .clk(clk), .load(decOut[0] & we3), .dataOut(regOut[39:32]));
+  registrador reg6 (.dataIn(wd3), .clk(clk), .load(decOut[0] & we3), .dataOut(regOut[47:40]));
+  registrador reg7 (.dataIn(wd3), .clk(clk), .load(decOut[0] & we3), .dataOut(regOut[55:48]));
+  registrador reg8 (.dataIn(wd3), .clk(clk), .load(decOut[0] & we3), .dataOut(regOut[63:56]));
+  
+  demux dmx1 (.regOut(regOut), .ra(ra1), .muxOut(rd1));
+  demux dmx2 (.regOut(regOut), .ra(ra2), .muxOut(rd2));
+  
+endmodule
